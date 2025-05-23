@@ -23,6 +23,7 @@ export default defineConfig({
     host: true,
     headers: {
       'Content-Type': 'application/javascript',
+      'Content-Security-Policy': "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https:;"
     },
   }
 });
